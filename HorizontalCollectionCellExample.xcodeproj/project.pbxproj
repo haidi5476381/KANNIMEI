@@ -51,7 +51,6 @@
 		DBFFC9D31ACE8ED20063BA32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFFC9D21ACE8ED20063BA32 /* QuartzCore.framework */; };
 		ECC8C46F1A7ECDDA00AB01A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8C46E1A7ECDDA00AB01A9 /* main.m */; };
 		ECC8C4721A7ECDDA00AB01A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8C4711A7ECDDA00AB01A9 /* AppDelegate.m */; };
-		ECC8C4751A7ECDDA00AB01A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC8C4741A7ECDDA00AB01A9 /* ViewController.m */; };
 		ECC8C4781A7ECDDA00AB01A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC8C4761A7ECDDA00AB01A9 /* Main.storyboard */; };
 		ECC8C47A1A7ECDDA00AB01A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC8C4791A7ECDDA00AB01A9 /* Images.xcassets */; };
 		ECC8C47D1A7ECDDA00AB01A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECC8C47B1A7ECDDA00AB01A9 /* LaunchScreen.xib */; };
@@ -153,8 +152,6 @@
 		ECC8C46E1A7ECDDA00AB01A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECC8C4701A7ECDDA00AB01A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECC8C4711A7ECDDA00AB01A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECC8C4731A7ECDDA00AB01A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECC8C4741A7ECDDA00AB01A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ECC8C4771A7ECDDA00AB01A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECC8C4791A7ECDDA00AB01A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECC8C47C1A7ECDDA00AB01A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -317,8 +314,6 @@
 				ECC8C4921A7ECE2500AB01A9 /* HorizontalScrollCell */,
 				ECC8C4701A7ECDDA00AB01A9 /* AppDelegate.h */,
 				ECC8C4711A7ECDDA00AB01A9 /* AppDelegate.m */,
-				ECC8C4731A7ECDDA00AB01A9 /* ViewController.h */,
-				ECC8C4741A7ECDDA00AB01A9 /* ViewController.m */,
 				ECC8C4761A7ECDDA00AB01A9 /* Main.storyboard */,
 				ECC8C4791A7ECDDA00AB01A9 /* Images.xcassets */,
 				ECC8C47B1A7ECDDA00AB01A9 /* LaunchScreen.xib */,
@@ -522,7 +517,6 @@
 				DB90E1FF1ACA539C0096914D /* YourSubclassNameHere.m in Sources */,
 				DB90E17B1AC8FD100096914D /* ImagesPreviewViewController.m in Sources */,
 				DB90E1E71AC9013E0096914D /* AFHTTPSessionManager.m in Sources */,
-				ECC8C4751A7ECDDA00AB01A9 /* ViewController.m in Sources */,
 				DB90E2051ACB9E9D0096914D /* HttpClientManager.m in Sources */,
 				ECC8C4721A7ECDDA00AB01A9 /* AppDelegate.m in Sources */,
 				DB90E1801AC8FD300096914D /* PageControlView.m in Sources */,
