@@ -108,7 +108,6 @@
 {
     HorizontalScrollCell *hsc =[collectionView dequeueReusableCellWithReuseIdentifier:@"cvcHsc" forIndexPath:indexPath];
     [hsc setBackgroundColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:0.5f]];
-    NSLog(@"indexpath.section = %f",indexPath.section);
     SessisterListObject* listObject = [dataArray objectAtIndex:indexPath.section];
     hsc.sessionListObject = listObject;
     [hsc setUpCellWithArray:listObject.sessionValueArray];
@@ -144,8 +143,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
     HeaderCollectionReusableView* aLabel = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Reusable" forIndexPath:indexPath];
-    
-    aLabel.headerLabel.frame = CGRectMake(0, 0, 0, 30);
+    aLabel.headerLabel.frame = CGRectMake(0, 0,100, 30);
     aLabel.headerLabel.textAlignment = NSTextAlignmentLeft;
     aLabel.headerLabel.textColor = [UIColor whiteColor];
     SessisterListObject* listObject = [dataArray objectAtIndex:indexPath.section];
