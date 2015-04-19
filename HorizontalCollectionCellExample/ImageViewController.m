@@ -34,7 +34,7 @@
 
     // Do any additional setup after loading the view from its nib.
     UICollectionViewFlowLayout *layout= [[UICollectionViewFlowLayout alloc]init];
-    self.collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, 320, 480) collectionViewLayout:layout];
+    self.collection = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height) collectionViewLayout:layout];
     self.collection.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
 
     
@@ -94,8 +94,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    SessisterListObject*  listObject = [dataArray objectAtIndex:section];
-    return listObject.sessionValueArray.count;
+    return 1;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -107,9 +106,9 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    HorizontalScrollCell *hsc =[collectionView dequeueReusableCellWithReuseIdentifier:@"cvcHsc"
-                                                                         forIndexPath:indexPath];
+    HorizontalScrollCell *hsc =[collectionView dequeueReusableCellWithReuseIdentifier:@"cvcHsc" forIndexPath:indexPath];
     [hsc setBackgroundColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:0.5f]];
+    NSLog(@"indexpath.section = %f",indexPath.section);
     SessisterListObject* listObject = [dataArray objectAtIndex:indexPath.section];
     hsc.sessionListObject = listObject;
     [hsc setUpCellWithArray:listObject.sessionValueArray];
