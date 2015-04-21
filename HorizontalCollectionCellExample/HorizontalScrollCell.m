@@ -24,7 +24,7 @@
 {
     CGFloat xbase = 10;
     CGFloat width = 100;
-    
+    [self.scroll.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.scroll setScrollEnabled:YES];
     [self.scroll setShowsHorizontalScrollIndicator:NO];
     
